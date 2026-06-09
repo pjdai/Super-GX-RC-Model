@@ -1,0 +1,52 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# --- Notebooks (scratch) ---
+*.ipynb
+
+# --- Data (large / private; place locally, not in the repo) ---
+data/
+Raw Data (Excel)/
+Meanful Output/
+*.xlsx
+!requirements*.xlsx
+*.csv
+*.parquet
+*.ttl
+
+# --- Pipeline outputs / generated artifacts ---
+output/
+Room_Temp_Rolling/
+Room_Parameters/
+Room_Temp_Predict/
+**/hunting_temp/
+params_TOW_QUIET.json
+*.pkl
+*.log
+*.png
+*.docx
+*.zip
+
+# --- Pre-edit recovery snapshots (local only) ---
+_original_backups/

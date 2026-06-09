@@ -1,0 +1,20 @@
+# Python dependencies for the RC room-temperature forecasting pipeline.
+#
+# Versions are intentionally unpinned: the project's virtual environment was
+# not available when this file was generated. After installing, you can pin
+# exact versions with:  pip install -r requirements.txt && pip freeze > requirements.txt
+
+# --- Core data + modeling ---
+numpy
+pandas
+matplotlib
+scikit-learn        # sklearn.metrics in scripts/error_table.py
+
+# --- File I/O engines used by the loaders (imported indirectly via pandas) ---
+pyarrow             # pandas.read_parquet / to_parquet (loaders/load_vav_unit_c.py, load_building.py)
+openpyxl            # pandas.read_excel / to_excel (.xlsx inputs and previews)
+
+# --- Only needed by scripts/smap_example_query.py (optional sMAP/Brick example) ---
+# The sMAP client itself is a local checkout added via SMAP_PYTHON_DIR, not a PyPI package.
+bokeh
+brickschema
